@@ -6,7 +6,13 @@
 //
 
 #import "DetailVc.h"
+#import "NetworkManager.h"
+#import "FishModel.h"
 
 @implementation DetailVc
+
+
+
+
 
 @end

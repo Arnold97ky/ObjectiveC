@@ -11,6 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FishTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) UIImageView* posterView;
+@property (nonatomic, weak) UILabel* titleLabel;
+@property (nonatomic, weak) UILabel* levelLabel;
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

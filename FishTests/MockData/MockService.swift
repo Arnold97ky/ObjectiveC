@@ -6,3 +6,11 @@
 //
 
 import Foundation
+@testable import Fish
+
+class MockService: NetworkManager {
+    
+    
+    
+    
+}

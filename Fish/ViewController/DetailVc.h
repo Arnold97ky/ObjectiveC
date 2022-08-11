@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailVc : NSObject
 
+//@property (nonatomic, weak) UIImageView* posterView;
+//@property (nonatomic, weak) UILabel* titleLabel;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

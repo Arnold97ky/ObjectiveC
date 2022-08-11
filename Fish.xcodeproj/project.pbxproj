@@ -17,6 +17,13 @@
 		417071BE28A355B600920D60 /* FishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071BD28A355B600920D60 /* FishTests.m */; };
 		417071C828A355B600920D60 /* FishUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071C728A355B600920D60 /* FishUITests.m */; };
 		417071CA28A355B600920D60 /* FishUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071C928A355B600920D60 /* FishUITestsLaunchTests.m */; };
+		417071D928A3560800920D60 /* FishModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071D828A3560800920D60 /* FishModel.m */; };
+		417071DD28A3597600920D60 /* DetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071DC28A3597600920D60 /* DetailVc.m */; };
+		417071E128A359EC00920D60 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071E028A359EC00920D60 /* NetworkManager.m */; };
+		417071E528A35ABF00920D60 /* FishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417071E428A35ABF00920D60 /* FishTableViewCell.m */; };
+		417071E928A35C5900920D60 /* FishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417071E828A35C5900920D60 /* FishViewModel.swift */; };
+		417071EC28A37C5000920D60 /* DigimonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417071EB28A37C5000920D60 /* DigimonTests.swift */; };
+		4170720728A440B800920D60 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170720628A440B800920D60 /* MockService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,19 @@
 		417071C328A355B600920D60 /* FishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		417071C728A355B600920D60 /* FishUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishUITests.m; sourceTree = "<group>"; };
 		417071C928A355B600920D60 /* FishUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishUITestsLaunchTests.m; sourceTree = "<group>"; };
+		417071D728A3560800920D60 /* FishModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FishModel.h; sourceTree = "<group>"; };
+		417071D828A3560800920D60 /* FishModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishModel.m; sourceTree = "<group>"; };
+		417071DB28A3597600920D60 /* DetailVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailVc.h; sourceTree = "<group>"; };
+		417071DC28A3597600920D60 /* DetailVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailVc.m; sourceTree = "<group>"; };
+		417071DF28A359EC00920D60 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		417071E028A359EC00920D60 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		417071E328A35ABF00920D60 /* FishTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FishTableViewCell.h; sourceTree = "<group>"; };
+		417071E428A35ABF00920D60 /* FishTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishTableViewCell.m; sourceTree = "<group>"; };
+		417071E728A35C5800920D60 /* Fish-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fish-Bridging-Header.h"; sourceTree = "<group>"; };
+		417071E828A35C5900920D60 /* FishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewModel.swift; sourceTree = "<group>"; };
+		417071EA28A37C4F00920D60 /* FishTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FishTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		417071EB28A37C5000920D60 /* DigimonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonTests.swift; sourceTree = "<group>"; };
+		4170720628A440B800920D60 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +124,15 @@
 		417071A028A355B100920D60 /* Fish */ = {
 			isa = PBXGroup;
 			children = (
+				417071E628A35C2900920D60 /* ViewModel */,
+				417071E228A35A8600920D60 /* View */,
+				417071DE28A359D400920D60 /* Service */,
+				417071DA28A358D400920D60 /* ViewController */,
+				417071D628A355C200920D60 /* Model */,
 				417071A128A355B100920D60 /* AppDelegate.h */,
 				417071A228A355B100920D60 /* AppDelegate.m */,
 				417071A428A355B100920D60 /* SceneDelegate.h */,
 				417071A528A355B100920D60 /* SceneDelegate.m */,
-				417071A728A355B100920D60 /* ViewController.h */,
-				417071A828A355B100920D60 /* ViewController.m */,
-				417071AA28A355B100920D60 /* Main.storyboard */,
 				417071AD28A355B500920D60 /* Assets.xcassets */,
 				417071AF28A355B500920D60 /* LaunchScreen.storyboard */,
 				417071B228A355B500920D60 /* Info.plist */,
@@ -122,7 +144,10 @@
 		417071BC28A355B600920D60 /* FishTests */ = {
 			isa = PBXGroup;
 			children = (
+				4170720328A43F7500920D60 /* MockData */,
 				417071BD28A355B600920D60 /* FishTests.m */,
+				417071EB28A37C5000920D60 /* DigimonTests.swift */,
+				417071EA28A37C4F00920D60 /* FishTests-Bridging-Header.h */,
 			);
 			path = FishTests;
 			sourceTree = "<group>";
@@ -134,6 +159,62 @@
 				417071C928A355B600920D60 /* FishUITestsLaunchTests.m */,
 			);
 			path = FishUITests;
+			sourceTree = "<group>";
+		};
+		417071D628A355C200920D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417071AA28A355B100920D60 /* Main.storyboard */,
+				417071D728A3560800920D60 /* FishModel.h */,
+				417071D828A3560800920D60 /* FishModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417071DA28A358D400920D60 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				417071A728A355B100920D60 /* ViewController.h */,
+				417071A828A355B100920D60 /* ViewController.m */,
+				417071DB28A3597600920D60 /* DetailVc.h */,
+				417071DC28A3597600920D60 /* DetailVc.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		417071DE28A359D400920D60 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				417071DF28A359EC00920D60 /* NetworkManager.h */,
+				417071E028A359EC00920D60 /* NetworkManager.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		417071E228A35A8600920D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				417071E328A35ABF00920D60 /* FishTableViewCell.h */,
+				417071E428A35ABF00920D60 /* FishTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417071E628A35C2900920D60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				417071E828A35C5900920D60 /* FishViewModel.swift */,
+				417071E728A35C5800920D60 /* Fish-Bridging-Header.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4170720328A43F7500920D60 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				4170720628A440B800920D60 /* MockService.swift */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +284,11 @@
 				TargetAttributes = {
 					4170719D28A355B100920D60 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					417071B828A355B600920D60 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = 4170719D28A355B100920D60;
 					};
 					417071C228A355B600920D60 = {
@@ -266,8 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417071E928A35C5900920D60 /* FishViewModel.swift in Sources */,
 				417071A928A355B100920D60 /* ViewController.m in Sources */,
+				417071E128A359EC00920D60 /* NetworkManager.m in Sources */,
+				417071DD28A3597600920D60 /* DetailVc.m in Sources */,
+				417071E528A35ABF00920D60 /* FishTableViewCell.m in Sources */,
 				417071A328A355B100920D60 /* AppDelegate.m in Sources */,
+				417071D928A3560800920D60 /* FishModel.m in Sources */,
 				417071B428A355B500920D60 /* main.m in Sources */,
 				417071A628A355B100920D60 /* SceneDelegate.m in Sources */,
 			);
@@ -278,6 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				417071BE28A355B600920D60 /* FishTests.m in Sources */,
+				417071EC28A37C5000920D60 /* DigimonTests.swift in Sources */,
+				4170720728A440B800920D60 /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -457,6 +548,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = consultantKy.Fish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Fish/ViewModel/Fish-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -466,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -483,6 +578,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = consultantKy.Fish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Fish/ViewModel/Fish-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -490,15 +587,25 @@
 		417071D128A355B600920D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = consultantKy.FishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "FishTests/FishTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fish.app/Fish";
 			};
@@ -507,15 +614,24 @@
 		417071D228A355B600920D60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = consultantKy.FishTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "FishTests/FishTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fish.app/Fish";
 			};
@@ -524,6 +640,7 @@
 		417071D428A355B600920D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -539,6 +656,7 @@
 		417071D528A355B600920D60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -6,23 +6,39 @@
 //
 
 import XCTest
+@testable import Fish
+
 
 class DigimonTests: XCTestCase {
 
+    var viewModel: FishViewModel?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        self.viewModel = FishViewModel(networkManager: NetworkManager())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.viewModel = nil
+        try super.tearDownWithError()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testRequestModelDataSuccess() {
+        // Arrange
+        let expectation = XCTestExpectation(description: "Successfully retrieving Models")
+        
+        // Act
+        self.viewModel?.bind {
+            expectation.fulfill()
+        }
+        self.viewModel?.fetchDigimon()
+        wait(for: [expectation], timeout: 3)
+        
+        // Assert
+        XCTAssertEqual(self.viewModel?.count, 209)
+        XCTAssertEqual(self.viewModel?.title(for: 0), "Koromon")
+        XCTAssertEqual(self.viewModel?.Level(for: 1), "In Training")
+        //XCTAssertEqual(self.viewModel?.image(for: 0, completion: <#T##(UIImage?) -> Void#>)
+        //let image = UIImage(named: "TestImage", in: bundle, compatibleWith: nil)!
     }
 
     func testPerformanceExample() throws {
